@@ -10,7 +10,7 @@ namespace OpenAiTest
 
         public async Task<string> SendMessageToGpt3(string message, double temperature, string systemPrompt)
         {
-            string apiKey = "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";
+            string apiKey = "";
 
             // Setting up the OpenAI API url and authorization
             var url = "https://api.openai.com/v1/chat/completions";
