@@ -1,32 +1,27 @@
 ﻿<Properties StartupConfiguration="{06A9A97E-4CB5-4EAF-B5DA-106C7A0F546D}|Default">
-  <MonoDevelop.Ide.ItemProperties.OpenAiTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Client.cs">
     <Files>
-      <File FileName="Program.cs" Line="5" Column="1" />
-      <File FileName="Client.cs" Line="5" Column="21" />
-      <File FileName="Supermarket.cs" Line="57" Column="13" />
+      <File FileName="Program.cs" Line="8" Column="1" />
+      <File FileName="Supermarket.cs" Line="34" Column="16" />
+      <File FileName="Client.cs" Line="4" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="OpenAiTest" expanded="True">
+          <Node name="OpenAiTest">
             <Node name="OpenAiTest">
-              <Node name="Supermarket.cs" selected="True" />
+              <Node name="Client.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>response</Value>
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.OpenAiTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

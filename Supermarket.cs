@@ -26,14 +26,55 @@ namespace OpenAiTest
                 new { role = "system", content = systemPrompt },
                 new { role = "user", content = message }
             },
-                temperature,
+                temperature
             };
 
             var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
 
             try
             {
-                
+                Console.WriteLine("Processing ....");
+                Console.WriteLine();
+
+                // Sending the POST request to the API
+                var response = await client.PostAsync(url, content);
+
+                Console.WriteLine("Done.");
+                Console.WriteLine();
+
+                // Getting the response
+                var responseString = await response.Content.ReadAsStringAsync();
+
+                return ParseGpt3Response(responseString);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public async Task<string> SendFollowUpMessage(string message, double temperature, string systemPrompt)
+        {
+            //// Setting up the OpenAI API url and authorization
+            var url = "https://api.openai.com/v1/chat/completions";
+
+            // Setting up the message body for chat-based model
+            var data = new
+            {
+                model = "gpt-3.5-turbo",
+                messages = new[]
+                {
+                new { role = "system", content = systemPrompt },
+                new { role = "user", content = message }
+            },
+                temperature,
+                n = 1
+            };
+
+            var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
+
+            try
+            {
                 Console.WriteLine("Processing ....");
                 Console.WriteLine();
 
